@@ -1,14 +1,14 @@
 document.getElementById("forma-gumb").addEventListener("click", function () {
     var ime = document.getElementById("ime").value;
-    var naslov = document.getElementById("naslov").value;
+    var email = document.getElementById("email").value;
     var poruka = document.getElementById("poruka").value;
 
     if (!ime) {
         alert("Upiši ime i prezime.");
         return;
     }
-    if (!naslov) {
-        alert("Upiši naslov poruke.");
+    if (!email) {
+        alert("Upiši email adresu.");
         return;
     }
     if (poruka.length < 20) {

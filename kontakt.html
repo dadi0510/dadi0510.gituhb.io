@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moj kutak – Kontakt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Smooch+Sans:wght@100..900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Naslovnica</a>
+            <a href="o_meni.html">O meni</a>
+            <a href="galerija.html">Galerija</a>
+            <a href="misli_i_citati.html">Misli i citati</a>
+            <a href="kontakt.html" class="aktivno">Kontakt</a>
+        </div>
+    </div>
+
+    <h1 class="uvodni-naslov">Pošalji poruku</h1>
+
+    <div class="spacer"></div>
+
+    <div class="kontakt-stranica">
+        <p class="kontakt-opis">Veselim se tvojoj poruci. Ako me želiš kontaktirati, ovdje možeš upisati svoje ime,
+            naslov poruke i sadržaj poruke.</p>
+
+        <div class="kontakt-forma">
+            <div class="forma-polje">
+                <label for="ime">Ime i prezime</label>
+                <input type="text" id="ime" name="ime" placeholder="Ime i prezime">
+            </div>
+            <div class="forma-polje">
+                <label for="naslov">Naslov</label>
+                <input type="text" id="naslov" name="naslov" placeholder="Naslov poruke">
+            </div>
+            <div class="forma-polje">
+                <label for="poruka">Poruka</label>
+                <textarea id="poruka" name="poruka" placeholder="Napiši poruku..."></textarea>
+            </div>
+            <button class="forma-gumb" id="forma-gumb" type="button">Pošalji</button>
+        </div>
+    </div>
+
+    <script src="kontakt.js"></script>
+</body>
+</html>

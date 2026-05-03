@@ -1,0 +1,363 @@
+* {
+    margin-block: 0;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    color: #252525;
+    background: #F2F0EF;
+    padding: 32px 64px;
+}
+
+/* ── Navigacija ── */
+.nav {
+    margin-bottom: 48px;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #252525;
+    padding: 6px 14px;
+    transition: color 0.25s, transform 0.25s;
+}
+
+.nav a.aktivno {
+    text-decoration: underline;
+    text-decoration-color: #93B4CA;
+    text-underline-offset: 6px;
+}
+
+.nav a:hover {
+    color: #93B4CA;
+    transform: translateY(-3px);
+}
+
+/* ── Naslov ── */
+.uvodni-naslov {
+    font-family: "Smooch Sans", sans-serif;
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    max-width: 1200px;
+}
+
+/* ── Uvodna sekcija ── */
+.uvodna-sekcija {
+    display: flex;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto 64px auto;
+}
+
+.uvodna-sekcija-tekst {
+    font-size: 24px;
+}
+
+.uvodna-sekcija-slika img {
+    width: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.uvodna-sekcija-velika-slika img {
+    width: 460px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ── Kartice ── */
+.kartice {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.kartica {
+    flex: 1;
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    min-height: 260px;
+    text-decoration: none;
+    color: #252525;
+}
+
+.kartica-o-meni {
+    background: #A4C8E1;
+}
+
+.kartica-galerija {
+    background: #D7E7F3;
+}
+
+.kartica-misli {
+    background: #E1A4A4;
+}
+
+.kartica-kontakt {
+    background: #F3D7D7;
+}
+
+.kartica-ikona {
+    width: 64px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kartica-ikona img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.kartica-ikona .material-icons {
+    font-size: 28px;
+}
+
+.kartica h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ── Galerija ── */
+.galerija-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galerija-slika {
+    flex: 1 1 300px;
+}
+
+.galerija-slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* ── Misli i citati ── */
+.misli-odjeljak {
+    margin-bottom: 48px;
+}
+
+.misli-odjeljak h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.misli-odjeljak p {
+    font-size: 16px;
+}
+
+.citati-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.citat-kartica {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.citat-kartica img {
+    width: 220px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.citat-tekst {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.citat-autor {
+    font-size: 13px;
+    color: #666;
+}
+
+/* ── Kontakt ── */
+.kontakt-stranica {
+    display: flex;
+    gap: 64px;
+    max-width: 1200px;
+}
+
+.kontakt-opis {
+    flex: 1;
+    font-size: 24px;
+}
+
+.kontakt-forma {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.forma-polje {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.forma-polje label {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.forma-polje input,
+.forma-polje textarea {
+    font-family: "Nunito", sans-serif;
+    font-size: 15px;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    outline: none;
+}
+
+.forma-polje input:focus,
+.forma-polje textarea:focus {
+    border-color: #93B4CA;
+}
+
+.forma-polje textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.forma-gumb {
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 28px;
+    background: #93B4CA;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background 0.2s;
+}
+
+.forma-gumb:hover {
+    background: #7aa3bc;
+}
+
+/* ── Ostalo ── */
+.spacer {
+    height: 32px;
+}
+
+/* ── Tablet ── */
+@media (max-width: 1100px) {
+    body {
+        padding: 24px 32px;
+    }
+
+    .nav-links {
+        gap: 4px;
+        font-size: 20px;
+    }
+
+    .uvodni-naslov {
+        font-size: 48px;
+    }
+
+    .kartica {
+        min-height: 220px;
+        min-width: 35%;
+    }
+
+    .spacer {
+        height: 24px;
+    }
+}
+
+/* ── Mobitel ── */
+@media (max-width: 800px) {
+    body {
+        padding: 20px 16px;
+    }
+
+    nav a {
+        padding: 10px 0;
+        font-size: 28px;
+    }
+
+    .uvodni-naslov {
+        font-size: 40px;
+        margin-bottom: 16px;
+    }
+
+    .uvodna-sekcija {
+        margin-bottom: 32px;
+    }
+
+    .uvodna-sekcija-tekst {
+        font-size: 18px;
+    }
+
+    .uvodna-sekcija-slika img, .uvodna-sekcija-velika-slika img {
+        width: 100%;
+    }
+
+    .kartica {
+        width: 30%;
+        min-height: 180px;
+        padding: 20px 18px;
+    }
+
+    .kartica h3 {
+        font-size: 18px;
+    }
+
+    .kartica p {
+        font-size: 14px;
+    }
+
+    .kontakt-stranica {
+        flex-direction: column;
+    }
+
+    .galerija-grid {
+        flex-direction: column;
+    }
+
+    .galerija-slika {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .spacer {
+        height: 16px;
+    }
+}

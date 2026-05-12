@@ -48,17 +48,21 @@ body {
     font-weight: 600;
     margin-bottom: 28px;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* ── Uvodna sekcija ── */
 .uvodna-sekcija {
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     max-width: 1200px;
     margin: 0 auto 64px auto;
 }
 
 .uvodna-sekcija-tekst {
+    flex: 1;
     font-size: 24px;
 }
 
@@ -157,7 +161,8 @@ body {
 
 /* ── Misli i citati ── */
 .misli-odjeljak {
-    margin-bottom: 48px;
+    max-width: 1200px;
+    margin: 0 auto 48px auto;
 }
 
 .misli-odjeljak h2 {
@@ -167,7 +172,7 @@ body {
 }
 
 .misli-odjeljak p {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .citati-grid {
@@ -194,12 +199,12 @@ body {
 }
 
 .citat-tekst {
-    font-size: 14px;
+    font-size: 24px;
     font-style: italic;
 }
 
 .citat-autor {
-    font-size: 13px;
+    font-size: 20px;
     color: #666;
 }
 
@@ -208,6 +213,7 @@ body {
     display: flex;
     gap: 64px;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 .kontakt-opis {
